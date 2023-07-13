@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+  int i;
+  string s, t;
+  cin >> s >> t;
+  bool x = false;
+
+  for (i = 0; i < s.size(); i++) {
+    if(s.substr(i, t.size()) == t){
+      x = true;
+      break;
+    }
+  }
+
+  if (x == true) {
+    cout << "Yes" << endl;
+  } else {
+    cout << "No" << endl;
+  }
+}
